@@ -17,6 +17,7 @@ public:
   float readInputCurrent();
   float readOutputVoltage();
   float readOutputCurrent();
+  float readOutputPower();
   float readSetVoltage();
   float readSetCurrent();
   

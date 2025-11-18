@@ -54,6 +54,11 @@ float DPS5015::readOutputCurrent() {
   return (value == 0xFFFF) ? 0.0 : value / 100.0;
 }
 
+float DPS5015::readOutputPower() {
+  uint16_t value = readRegister(REG_POWER_OUT);
+  return (value == 0xFFFF) ? 0.0 : value / 100.0;
+}
+
 float DPS5015::readSetVoltage() {
   _modbus->readHoldingRegisters(REG_VOLTAGE_SET, 1);
   if (_modbus->ku8MBSuccess == _modbus->getResponseBuffer(0)) {

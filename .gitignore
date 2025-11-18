@@ -1,0 +1,23 @@
+# Arduino build artifacts
+*.o
+*.a
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+build/
+.build/
+.vscode/
+.vs/
+
+# Platform specific
+.DS_Store
+Thumbs.db
+
+# IDE files
+*.swp
+*.swo
+*~
+.idea/
+*.iml
